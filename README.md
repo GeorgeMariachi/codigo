@@ -34,3 +34,22 @@ git init
 ```bash
 git status
 ```
+
+* Para preparar nuestros archivos para la zona de stage (prepararlos para comit)
+
+```bash
+git add .
+git add nombreDelArichivo.extension
+```
+
+* crear el registro de los cambios realizados:
+
+```bash
+git commit -m "comentario corto y conciso"
+```
+
+* Para ver una linea de tiempo de los commits que hemos realizado:
+
+```bash
+git log
+```
