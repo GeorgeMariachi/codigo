@@ -9,14 +9,14 @@ body{
     color: #fff;
 }
 
-main{
-    display:flex;
-    justify-content:center;
+main {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .container {
-    border: solid;
     width: 600px;
 }
 
@@ -30,5 +30,115 @@ main{
     color: #fff;
     font-family: monospace, sans-serif;
     text-transform: uppercase;
-    
+    border:none;
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.search {
+    margin-top: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #313e67;
+    padding:10px;
+    border-radius: 12px;
+    gap: 20px;
+}
+
+.search input {
+    flex-grow:1;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color:#fff;
+    font-family: monospace, sans-serif;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: monospace, sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search button {
+    border: none;
+    color: #fff;
+    font-family: monospace, sans-serif;
+    background-color: #2250e9;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.result {
+    display: flex;
+    background-color: #313e67;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile {
+    flex-grow: 1;
+}
+
+.profile-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.username {
+    color: #05133f;
+}
+
+.date {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.about {
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #101b40;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding:10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+h6 {
+    color: #ccc;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    gap:30px;
+}
+
+.social div {
+    width: 50%;
 }
